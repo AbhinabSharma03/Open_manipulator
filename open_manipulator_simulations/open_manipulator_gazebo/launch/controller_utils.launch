@@ -1,0 +1,11 @@
+<launch>
+  <!-- Load the controller configurations from a YAML file -->
+  <rosparam file="$(find open_manipulator_gazebo)/config/joint_state_controller.yaml" command="load"/>
+
+  <!-- Start the controller manager node -->
+  <node name="controller_manager" pkg="controller_manager" type="spawner" respawn="false" output="screen">
+    <!-- Spawn the joint_state_controller -->
+    <param name="controllers" value="joint_state_controller"/>
+  </node>
+</launch>
+
