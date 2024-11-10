@@ -63,7 +63,7 @@ bash
 Start the controller for the OpenManipulator X. This step initializes the robot and sets up the necessary nodes:
 
 bash
-> roslaunch open_manipulator_control open_manipulator_control.launch
+> roslaunch open_manipulator_controller open_manipulator_controller.launch
 
 6. Run the Python Script
 
